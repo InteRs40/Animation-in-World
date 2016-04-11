@@ -1,0 +1,322 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>AiW</title>
+		<meta name="description" content="This is animation."/>
+		<meta name="keywords" content="animation, world, disney, dreamworks, союзмульфильм, ghibli"/>
+		<link rel="shortcut icon" type="image/vnd.microsoft.icon" href="images/favicon.ico" />
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+		<script src="js/cufon-yui.js" type="text/javascript"></script>
+		<script src="js/gotham.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			Cufon.replace('h3');
+		</script>
+		<link rel="stylesheet" href="css/accordion.css" type="text/css" media="screen" />
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				//Hide (Collapse) the toggle containers on load
+				$(".acc_container").hide(); 
+				//Switch the "Open" and "Close" state per click then slide up/down (depending on open/close state)
+				$("h2.acc_trigger").click(function(){
+					$(this).toggleClass("active").next().slideToggle("slow");
+					return false; //Prevent the browser jump to the link anchor
+				});
+
+			});
+		</script>
+		<script type="text/javascript" src="js/my.js"></script>
+		<script src="js/slide.js" type="text/javascript"></script>
+		<script type="text/javascript">
+        	$(function() {
+            	var offset = $("#logo").offset();
+           		var topPadding = 15;
+            	$(window).scroll(function() {
+                	if ($(window).scrollTop() > offset.top) {
+                    	$("#logo").stop().animate({
+                    	    marginTop: $(window).scrollTop() - offset.top + topPadding
+                    	});
+                	} 
+                	else {
+                    	$("#logo").stop().animate({
+                        	marginTop: 0
+                    	});
+                	};
+            	});
+        	});
+    	</script>
+	</head>
+	<body class="work">
+		<div class="wrapper">
+			<div class="container">
+	    		<div class="content">
+		    		<div id="columnLeft">
+			    		<div id="logo">
+			        		<a href="main.html"><img src="images/logo.png" style=" height: 170px; width: 220px;"/></a>
+			    		</div><!-- конец #logo -->
+	        		</div><!-- конец #logo -->	
+	        		<div id="columnRight">
+		        		<div id="header">
+		            		<div id="menu">
+		                		<ul id="menu">
+				            		<li class="1"><a href="main.html"><img src="images/menu/home_btn.gif" /></a></li>
+				            		<li class="divline"></li>	
+				            		<li class="3"><a href="work.html"><img src="images/menu/work_btn.gif" /></a></li>
+				            		<li class="divline"></li>
+				            		<li class="5"><a href="contact.html"><img src="images/menu/contact_btn.gif" /></a></li>
+				        		</ul>
+	                		</div><!-- конец #menu -->
+	        			</div><!-- конец #header -->
+	            		<div id="main">
+			        		<h2 class="acc_trigger"><a href="#">01 <strong>Disney</strong></a></h2>
+							<div class="acc_container">
+					    		<div class="block">
+									<!--Контент начинается здесь-->
+									<div class="projectNav">
+										<div class="projectNavFloat">
+											<a target="disFrame" href="http://www.kinopoisk.ru/film/817739/">1928 «Микки Маус»</a>
+											<br>
+											<a target="disFrame" href="http://www.kinopoisk.ru/film/551/">1937 «Белоснежка и семь гномов»</a>
+											<br />
+											<a target="disFrame" href="http://www.kinopoisk.ru/film/8154/">1942 «Бэмби» </a>
+											<br />
+											<a target="disFrame" href="http://www.kinopoisk.ru/film/8231/">1950 «Золушка»</a>
+											<br />
+											<a target="disFrame" href="http://www.kinopoisk.ru/film/19504/"> 1951 «Алиса в Стране чудес»</a>
+										</div><!-- конец .projectNavFloat -->	
+										<div class="projectNavFloat">
+											<a target="disFrame" href="http://www.kinopoisk.ru/film/8238/">1953 «Питер Пэн»</a>
+											<br />
+											<a target="disFrame" href="http://www.kinopoisk.ru/film/8129/">1961 «Сто один далматинец»</a>
+											<br />
+											<a target="disFrame" href="http://www.kinopoisk.ru/film/8147/"> 1989 «Русалочка»</a>
+											<br />
+											<a target="disFrame" href="http://www.kinopoisk.ru/film/2361/">1992 «Аладдин»</a>
+											<br>
+											<a target="disFrame" href="http://www.kinopoisk.ru/film/740/">2002 «Лило и Стич»</a>
+										</div><!-- конец .projectNavFloat -->
+										<br class="clearfloat" />
+									</div><!-- конец .projectNav -->
+									<iframe class="dis" src="work/Disney/disney.html" frameborder="0" name="disFrame" width="100%" height="460"></iframe> 
+					    		</div><!-- конец .block -->
+							</div><!-- конец .acc_container -->
+							<h2 class="acc_trigger"><a href="#">02 <strong>Союзмультфильм</strong></a></h2>
+							<div class="acc_container">
+					   			<div class="block">
+									<!--Контент начинается здесь-->
+									<div class="projectNav">
+										<div class="projectNavFloat">
+											<a target="souzFrame" href="http://www.kinopoisk.ru/film/44916/">1947 — Конёк-Горбунок (новая редакция 1975)</a>
+											<br />
+											<a target="souzFrame" href="http://www.kinopoisk.ru/film/278377/">1952 — Аленький цветочек</a>
+											<br />
+											<a target="souzFrame" href="http://www.kinopoisk.ru/film/46788">1956 — Двенадцать месяцев </a>
+											<br >
+											<a target="souzFrame" href="http://www.kinopoisk.ru/film/29818">1957 — Снежная королева </a>
+											<br />
+											<a target="souzFrame" href="http://www.kinopoisk.ru/film/256092/">1965 — Каникулы Бонифация</a>
+											<br />
+										</div><!-- конец .projectNavFloat -->
+										<div class="projectNavFloat">
+											<a target="souzFrame" href="http://www.kinopoisk.ru/film/14000/">1967-1971 Маугли (5 серий)</a>
+											<br />
+											<a target="souzFrame" href="http://www.kinopoisk.ru/film/251884/">1968-1970 — Малыш и Карлсон (3 серии)</a>
+											<br />
+											<a target="souzFrame" href="http://www.kinopoisk.ru/film/46483/">1969-2006 — Ну, погоди! (18 серий)</a>
+											<br />
+											<a target="souzFrame" href="http://www.kinopoisk.ru/film/42172/">1981 — Тайна третьей планеты</a>
+											<br />
+											<a target="souzFrame" href="http://www.kinopoisk.ru/film/45319/">1982 — Жил-был пёс </a>
+										</div><!-- конец .projectNavFloat -->
+										<br class="clearfloat" />
+									</div><!-- конец .projectNav -->
+									<iframe class="souz" src="work/союзмультфильм/souz.html" frameborder="0" name="souzFrame" width="100%" height="460"> </iframe> 
+					    		</div><!-- конец .block -->
+							</div><!-- конец .acc_container -->
+							<h2 class="acc_trigger"><a href="#">03 <strong>DreamWorks</strong></a></h2>
+							<div class="acc_container">
+					    		<div class="block">
+									<!--Контент начинается здесь-->
+									<div class="projectNav">
+										<div class="projectNavFloat">
+											<a target="DWFrame" href="http://www.kinopoisk.ru/film/15123/">Муравей Антц - 1998</a>
+											<br />
+											<a target="DWFrame" href="http://www.kinopoisk.ru/film/635/">Побег из курятника - 2000</a>
+											<br />
+											<a target="DWFrame" href="http://www.kinopoisk.ru/film/806/">Дорога на Эльдорадо - 2001</a>
+											<br />
+											<a target="DWFrame" href="http://www.kinopoisk.ru/film/430/">Шрэк - 2001</a>
+											<br />
+											<a target="DWFrame" href="http://www.kinopoisk.ru/film/7971/">Синдбад: Легенда семи морей - 2003</a>
+											<br />
+										</div><!-- конец .projectNavFloat -->
+										<div class="projectNavFloat">	
+											<a target="DWFrame" href="http://www.kinopoisk.ru/film/6006/">Мадагаскар - 2005</a>
+											<br />
+											<a target="DWFrame" href="http://www.kinopoisk.ru/film/22399/">Уоллес и Громит - 2005</a>
+											<br />
+											<a target="DWFrame" href="http://www.kinopoisk.ru/film/83792/">Смывайся! - 2006</a>
+											<br />
+											<a target="DWFrame" href="http://www.kinopoisk.ru/film/103734/">Кунг-Фу Панда - 2008</a>
+											<br />
+											<a target="DWFrame" href="http://www.kinopoisk.ru/film/280172/">Как приручить дракона - 2010</a>
+										</div><!-- конец .projectNavFloat -->
+										<br class="clearfloat" />
+									</div><!-- конец .projectNav -->
+									<iframe src="work/DreamWorks/dreamworks.html" frameborder="0" name="DWFrame" width="100%" height="460"> </iframe>
+					    		</div><!-- конец .block -->
+							</div><!-- конец .acc_container -->
+							<h2 class="acc_trigger"><a href="#">04 <strong>Ghibli</strong></a></h2>
+							<div class="acc_container">
+					    		<div class="block">
+								<!--Контент начинается здесь-->
+									<div class="projectNav">
+										<div class="projectNavFloat">
+											<a target="GhFrame" href="http://www.kinopoisk.ru/film/79873/">Принц Севера(1968)</a>
+											<br />
+											<a target="GhFrame" href="http://www.kinopoisk.ru/film/8240/">Навсикая из долины Ветров(1984)</a>
+											<br />
+											<a target="GhFrame" href="http://www.kinopoisk.ru/film/8219/">Могила светлячков(1988)</a>
+											<br />
+											<a target="GhFrame" href="http://www.kinopoisk.ru/film/8221/">Мой сосед Тоторо(1988)</a>
+											<br />
+											<a target="GhFrame" href="http://www.kinopoisk.ru/film/2428/">Ведьмина служба доставки(1989)</a>
+											<br />
+										</div><!-- конец .projectNavFloat -->	
+										<div class="projectNavFloat">
+											<a target="GhFrame" href="http://www.kinopoisk.ru/film/8229/">Порко Россо(1992)</a>
+											<br />
+											<a target="GhFrame" href="http://www.kinopoisk.ru/film/32714/">Шепот сердца(1995)</a>
+											<br />
+											<a target="GhFrame" href="http://www.kinopoisk.ru/film/441/">Принцесса Мононокэ(1997)</a>
+											<br />
+											<a target="GhFrame" href="http://www.kinopoisk.ru/film/370/">Унесённые призраками(2001)</a>
+											<br />
+											<a target="GhFrame" href="http://www.kinopoisk.ru/film/49684/">Ходячий замок(2004)</a>
+											<br />
+										</div><!-- конец .projectNavFloat --> 
+										<br class="clearfloat" />
+									</div><!-- конец .projectNav -->
+									<iframe src="work/Ghibli/ghibli.html" frameborder="0" name="GhFrame" width="100%" height="460"> </iframe>
+					   			</div><!-- конец .block -->
+							</div><!-- конец .acc_container -->
+							<h2 class="acc_trigger"><a href="#">05 <strong>Мельница</strong></a></h2>
+							<div class="acc_container">
+					    		<div class="block">
+									<!--Контент начинается здесь-->
+									<div class="projectNav">
+										<div class="projectNavFloat">
+											<a target="MelFrame" href="http://www.kinopoisk.ru/film/79438/">1999—2000 «Приключения в Изумрудном городе»</a>
+											<br>
+											<a target="MelFrame" href="http://www.kinopoisk.ru/film/50946/">2003 «Карлик Нос»</a>
+											<br />
+											<a target="MelFrame" href="http://www.kinopoisk.ru/film/81041/">2004 «Алёша Попович и Тугарин Змей»</a>
+											<br />
+											<a target="MelFrame" href="http://www.kinopoisk.ru/film/405734/">с 2005 «Приключения Лунтика и его друзей»</a>
+											<br />
+											<a target="MelFrame" href="http://www.kinopoisk.ru/film/147818/">2006 «Добрыня Никитич и Змей Горыныч»</a>
+											<br />
+										</div><!-- конец .projectNavFloat -->	
+										<div class="projectNavFloat">
+											<a target="MelFrame" href="http://work/sign/mascot.html">2007 «Илья Муромец и Соловей-Разбойник»</a>
+											<br />
+											<a target="MelFrame" href="http://www.kinopoisk.ru/film/255030/">2008 «Про Федота-стрельца, удалого молодца»</a>
+											<br />
+											<a target="MelFrame" href="http://www.kinopoisk.ru/film/432650/">2010 «Три богатыря и Шамаханская царица»</a>
+											<br />
+											<a target="MelFrame" href="http://www.kinopoisk.ru/film/592212/">с 2011 «Барбоскины»</a>
+											<br />
+											<a target="MelFrame" href="http://www.kinopoisk.ru/film/406175/">«2011 «Иван Царевич и Серый Волк»</a>
+											<br />
+										</div><!-- конец .projectNavFloat -->
+										<br class="clearfloat" />
+									</div><!-- конец .projectNav -->
+									<iframe src="work/Мельница/mel.html" frameborder="0" name="MelFrame" width="100%" height="460"> </iframe>
+					    		</div><!-- конец .block -->
+							</div><!-- конец .acc_container -->
+							<h2 class="acc_trigger"><a href="#">06 <strong>Pixar</strong></a></h2>
+							<div class="acc_container">
+					    		<div class="block">
+								<!--Контент начинается здесь-->
+									<div class="projectNav">
+										<div class="projectNavFloat">
+											<a target="PixFrame" href="http://www.kinopoisk.ru/film/79438/">1995 — История игрушек</a>
+											<br>
+											<a target="PixFrame" href="http://www.kinopoisk.ru/film/2356/">1998 — Приключения Флика</a>
+											<br />
+											<a target="PixFrame" href="http://www.kinopoisk.ru/film/458/">2001 — Корпорация монстров</a>
+											<br />
+											<a target="PixFrame" href="http://www.kinopoisk.ru/film/405734/">2003 — В поисках Немо</a>
+											<br />
+											<a target="PixFrame" href="http://www.kinopoisk.ru/film/38903/">2004 — Суперсемейка</a>
+											<br />
+										</div><!-- конец .projectNavFloat -->	
+										<div class="projectNavFloat">
+											<a target="PixFrame" href="http://www.kinopoisk.ru/film/61249/">2006 — Тачки</a>
+											<br />
+											<a target="PixFrame" href="http://www.kinopoisk.ru/film/89514/">2007 — Рататуй</a>
+											<br />
+											<a target="PixFrame" href="http://www.kinopoisk.ru/film/279102/">2008 — ВАЛЛ-И</a>
+											<br />
+											<a target="PixFrame" href="http://www.kinopoisk.ru/film/325381/">2009 — Вверх</a>
+											<br />
+											<a target="PixFrame" href="http://www.kinopoisk.ru/film/409118/">2012 — Храбрая сердцем</a>
+											<br />
+										</div><!-- конец .projectNavFloat -->
+									</div><!-- конец .projectNav -->	
+									<iframe class="Pix" src="work/Pixar/pix.html" frameborder="0" name="PixFrame" width="100%" height="460"> </iframe>
+					    		</div><!-- конец .block -->
+							</div><!-- конец .acc_container -->
+	            		</div><!-- конец #main -->
+	            		<br class="clearfloat" />
+	            		<br class="clearfloat" />
+	            		<br class="clearfloat" />
+	            		<br class="clearfloat" />
+	        		</div><!-- конец #columnRight -->
+	    		</div><!-- конец .content -->
+			</div><!-- конец .container -->
+		</div><!-- конец .wrapper -->
+		<div id="footer">
+    		<div id="footerImg">
+    		</div><!-- конец footerImg -->
+    		<div id="stripe">
+        		<div id="stripeLeft">
+        		</div><!-- конец stripeLeft -->
+        		<div id="stripeRight">
+        		</div><!-- конец stripeRight -->
+    		</div><!-- конец #stripe -->
+    		<div class="container">
+	    		<div id="copywrite">
+	        		&copy; Animation in World. Все права защищены.
+	        		<br />
+	        		<h3>Do something good.</h3>
+	    		</div><!-- конец #copywrite"-->
+	    		<div class="nav">
+		    		Навигация
+		    		<br />
+		    		<a href="main.html">// Главная</a>
+		    		<br />
+		    		<a href="work.html">// Студии</a>
+		    		<br />
+		    		<a href="contact.html">// Контакты</a>
+	    		</div><!-- конец .nav -->
+	    		<div class="nav">
+		  			Соц.сети
+		    		<br />
+		    		<a href="https://vk.com/zelezobetonno">// VKontakte</a>
+		    		<br />
+		    		<a href="http://www.facebook.com" target="_blank">// Facebook</a>
+		    		<br />
+		    		<a href="http://twitter.com" target="_blank">// Twitter</a>
+	    		</div><!-- конец .nav -->
+	    		<div id="contact">
+	        		улица Пушкина 32, Ростов-на-Дону, Российская Федерация
+	        		<br />
+	        		//  т. 8 (989) 622 31 13  //  <a href="somkin-k@mail.ru">п. animation@mail.ru</a>
+	    		</div><!-- конец #contact --><h3>Do something good.</h3>
+    		</div><!-- конец .container -->
+		</div><!-- конец #footer -->
+		<script type="text/javascript"> Cufon.now(); </script>
+	</body>
+</html>
