@@ -1,0 +1,45 @@
+h2.acc_trigger {
+	background: url(../images/h2_trigger_a.gif) no-repeat 0 -34px;
+	height: 45px;	line-height: 46px;
+	width: 500px;
+	font-weight: normal;
+	float: left;
+	font-size: 36px;
+	margin: 0;
+	padding-right: 0;
+	padding-top: 10px;
+	padding-bottom: 15px;
+}
+h2.acc_trigger a {
+	color: #666;
+	display: block;
+	padding: 0 0 0 30px;
+}
+h2.acc_trigger.active a {
+	color: #000;
+	display: block;
+	padding: 0 0 0 30px;
+}
+
+h2.acc_trigger a:hover {
+	color: #000;
+	background: url(../images/h2_trigger_a.gif) 0 0;
+}
+h2.active {
+	background: url(../images/h2_trigger_a.gif) -498px -81px;
+}
+h2.active a:hover {
+	background: url(../images/h2_trigger_a.gif) -498px -1px;
+}
+.acc_container {
+	margin: 0 0 5px; padding: 0;
+	overflow: hidden;
+	font-size: 1.2em;
+	width: 970px;
+	clear: both;
+}
+.acc_container .block {
+	border-top: 1px solid #666;
+	border-bottom: 1px solid #666;
+	padding-bottom: 20px;
+}

@@ -1,0 +1,607 @@
+@charset "UTF-8";
+body {
+	margin: 0;
+	padding: 0;
+	color: #666666;
+	font-family: "Helvetica Neue", Verdana, Arial, Helvetica, sans-serif;
+	font-size: 100%;
+	line-height: 1.4;
+	background-color: #000;
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+}
+h5 {
+	color: #444;
+	text-align: left;
+	font-size: 12px;
+	line-height: 20px;
+	margin-top: -9px;
+}
+a {
+	outline: none;
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+}
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: none; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;	
+}
+.wrapper {
+	background-color: #f9f9f9;
+	width: 100%;
+}
+/* ~~ this fixed width container surrounds all other elements ~~ */
+.container {
+	width: 1200px;
+	background: #f9f9f9;
+	margin: 0 auto;
+	padding-bottom: 100px;
+}
+
+/* ~~ This is the layout information. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the div. The elements within this div have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+*/
+.content {
+
+	padding: 10px 0;
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the overflow:hidden on the .container is removed */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+h2 {
+	font-size: 31px;
+}
+h4 {
+	color: #222;
+	margin-bottom: 7px;
+	font-size: 18px;
+}
+#logo {
+	position: absolute;
+	width: 200px;
+	height: 200px;
+}
+#header {
+	height: 80px;
+	border-bottom: 1px solid #666666;
+}
+#columnLeft {
+	float: left;
+	width: 234px;
+	margin-right: 0;
+}
+#columnRight {
+	margin-left: 234px;
+}
+.home #columnRight {
+	margin-bottom: -20px;
+}
+#menu {
+	list-style-type: none;
+	padding-top: 23px;
+	margin-left: 144px;
+}
+#menu li {
+	float: left;
+	height: 40px;
+	padding-top: 4px;
+	color: white;
+	padding-left: 5px;
+	margin-right: 35px;
+	margin-left: 35px;
+}
+#menu li.divline {
+	padding: 0;
+	border-right: thin solid gray;
+	height: 8px;
+	margin: 26px 0 0;
+}
+#main {
+	margin-top: 50px;
+	font-size: 12px;
+}
+#mainLeft {
+	width: 280px;
+	font-size: 16px;
+	float: left;
+}
+.home #mainLeft img {
+	padding-top: 30px;
+}
+.contact .topPad {
+	margin-top: 100px;
+}
+.contact #mainLeft img {
+	margin-top: 5px;
+}
+.about #main {
+	margin-top: 27px;
+}
+.about #mainLeft {
+	width: 263px;
+	font-size: 14px;
+	float: left;	
+	margin-top: 32px;
+
+}
+#mainLeft .text {
+	margin-top: 20px;
+	float: none;
+	margin-bottom: 60px;
+}
+#mainRight {
+	margin-left: 293px;
+}
+.home #mainRight {
+	padding-left: 40px;
+}
+.about #mainRight {
+	margin-left: 254px;
+}
+.HeadercolumnLeft {
+	padding-top: 30px;
+}
+.about .columnLeft {
+	float: left;
+	padding-right: 50px;
+	font-size: 13px;
+	width: 320px;
+	padding-top: 0;
+	padding-bottom: 100px;
+}
+.about .columnRight {
+	float: left;
+	font-size: 13px;
+	width: 320px;
+	padding-top: 0;
+	padding-bottom: 100px;
+	margin-left: -4px;
+}
+.contact .columnLeft {
+	float: left;
+	padding-right: 19px;
+	font-size: 12px;
+	font-weight: bold;
+	color: #333;
+	width: 177px;
+	border-right: thin dotted gray;
+	margin-right: 24px;
+	height: 43px;
+}
+.contact .columnLeft2 {
+	float: left;
+	padding-right: 10px;
+	font-size: 12px;
+	font-weight: bold;
+	color: #333;
+	width: 161px;
+	border-right: thin dotted gray;
+	margin-right: 24px;
+	height: 43px;
+}
+.contact .columnLeft3 {
+	float: left;
+	padding-right: 10px;
+	font-size: 11px;
+	font-weight: bold;
+	color: #333;
+	width: 240px;	
+}
+.contact .columnLeft img {
+	float: left;
+	padding-right: 16px;
+}
+.contact .columnLeft2 img {
+	float: left;
+	padding-right: 16px;
+}
+.contact .columnLeft3 img {
+	float: left;
+	padding-right: 16px;
+}
+.contact .columnLeft .txt {
+	padding-top: 10px;
+}
+.contact .columnLeft2 .txt {
+	padding-top: 10px;
+}
+.contact .columnLeft .txt2 {
+	margin-top: -5px;
+}
+#main a {
+	text-decoration: underline;
+}
+.work #main a {
+	text-decoration: none;
+}
+.line {
+	border-top: 1px solid #666;
+}
+.contact .line {
+	padding-top: 30px;
+	border-top-style: dotted;
+	border-top-color: gray;
+}
+#contactFormBox {
+	background-color: #f1f1f1;
+	padding: 30px;
+	margin-top: 30px;
+	margin-left: -30px;
+	margin-bottom: 60px;
+	width: 450px;
+}
+input {width:250px;
+	height: 12px;
+	padding: 5px;
+}
+.submit {
+	background-color: #gray;
+	width: 78px;
+	height: 25px;
+	border-style: none;
+	float: right;
+}
+
+#error {
+	color: #fb6467;
+	font-size: 12px;
+	display:none;
+	font-weight: bold;
+	float: left;
+	text-align: left;
+	width: 248px;
+}
+.needsfilled {
+	color: #fff;
+	background: #fb6467;
+	font-weight: bold;
+	font-style: italic;
+}
+label {
+	background: black no-repeat;
+	color: #ddd;
+	font-size: 12px;
+	padding: 5px 10px 4px;
+	-moz-border-radius-topleft: 5px;
+    border-top-left-radius: 5px;
+    -webkit-border-top-left-radius: 5px;
+    -moz-border-radius-topright: 5px;
+    border-top-right-radius: 5px;
+    -webkit-border-top-right-radius:5px;
+	display: inline;
+}
+#message {
+	margin-left: 0;
+	padding: 5px;
+	width: 438px;
+}
+
+.projectNav {
+	padding: 20px 30px;
+	border-bottom: 1px dotted #bababa;
+	height: 100px;
+}
+.projectNav a {
+	color: #666666;
+	font-size: 13px;
+	font-weight: bold;
+	padding: 1px 5px;
+}
+.projectNav a:hover {
+	background-color: #000;
+	color: #fff;
+	font-weight: bold;
+}
+.projectNavFloat {
+	float: left;
+	padding-right: 80px;
+}
+#main .acc_container:nth-child(10) .block .projectNav{
+	width: 934px;
+	height: 100px;
+}
+#main .acc_container:nth-child(11) .block .projectNav{
+	height: 100px;
+}
+iframe {
+	border-style: none;
+	padding-top: 30px;
+}
+iframe.dis {
+	height: 560px;
+	padding-top: 40px;
+	
+}
+#blogSidebar {
+	color: #000;
+	font-size: 17px;
+	padding-top: 20px;
+}
+.blogSidebarNav {
+	color: #000;
+	font-size: 14px;
+	padding-top: 10px;
+}
+#main .blogSidebarNav a {
+	text-decoration: none;
+}
+#main .blogSidebarNav a:hover {
+	text-decoration: underline;
+}
+.blogSidebarNav img {
+	margin-bottom: -5px;
+	padding-right: 8px;
+}
+.blogHead {
+	font-size: 30px;
+}
+.blogTitle {
+	font-size: 24px;
+	font-weight: bold;
+}
+.blogContent {
+	padding-right: 60px;
+	padding-top: 20px;
+	padding-bottom: 70px;
+	margin-bottom: 20px;
+}
+.blogContent img {
+	margin-bottom: 20px;
+}
+#footer {
+	color: #666666;
+	font-size: 11px;
+	height: 100px;
+	background-repeat: no-repeat;
+	margin-top: -92px;
+}
+#footer .container {
+	background-color: #000;
+	width: 956px;
+	padding-left: 231px;
+	height: 100px;
+}
+#footer .nav {
+	float: left;
+	padding-left: 50px;
+}
+#footerImg {
+	height: 92px;
+	background: url(../images/footer.gif) no-repeat center;
+}
+#footer #stripe {
+	height: 20px;
+	margin-bottom: 8px;
+	background: black no-repeat;
+}
+#footer a {
+	color: #3f3d3d;
+	text-decoration: none;
+}
+#footer a:hover {
+	color: #adada2;
+	text-decoration: underline;
+}
+#stripeLeft {
+	background: url(../images/stripeRoundLeft.gif) no-repeat left top;
+	height: 6px;
+	float: left;
+	width: 5px;
+}
+#stripeRight {
+	background: url(../images/stripeRoundRight.gif) no-repeat left top;
+	height: 6px;
+	border-color: #fa863d;
+	float: right;
+	width: 5px;
+}
+#copywrite {
+	float: left;
+	padding-right: 70px;
+}
+#contact {
+	float: right;
+	text-align: right;
+}
+.projectform #contactFormBox {
+	background-color: #f1f1f1;
+	padding: 30px;
+	margin-top: 30px;
+	margin-left: -30px;
+	margin-bottom: 60px;
+	width: 500px;
+}
+.projectform .msg label {
+	color: gray;
+	font-size: 12px;
+	-moz-border-radius-topleft: 5px;
+    border-top-left-radius: 5px;
+    -webkit-border-top-left-radius: 5px;
+    -moz-border-radius-topright: 5px;
+    border-top-right-radius: 5px;
+    -webkit-border-top-right-radius:5px;
+	display: inline;
+	padding: 4px 10px;
+	background-color: transparent;
+}
+.projectform .msg p label .label {
+	padding: 0 83px 0 5px;
+	margin: -6px 0 -10px;
+}
+.projectform h1 {
+	color: black;
+	letter-spacing: -2px;
+}
+.projectform h3 {
+	font-size: 24px;
+	color: black;
+	letter-spacing: -2px;
+}
+.projectform .topPad {
+	padding-top: 10px;
+}
+.projectform .line {
+	margin-top: 50px;
+	margin-bottom: 50px;
+	border-color: silver;
+}
+.projectform .submit {
+	margin-right: 10px;
+}
+.admin .wrap {
+	background-color: #000000;
+	width: 100%
+}
+
+.admin table {
+	border: none;
+	border-collapse: collapse;
+	width: 100%;
+}
+.admin .header {
+	height: 200px;
+	background-color: #000000;
+	font-size: 22px;
+	font-weight: bold;
+	color: #ffffff;
+	padding-left: 48px;
+}
+
+.admin .container {
+	background-color: #202020;
+	padding-bottom: 0px;
+}
+
+.admin .columnLeft  {
+	float: left;
+	font-size: 12px;
+	width: 440px;
+}
+
+.admin .columnRight {
+	float: left;
+	font-size: 12px;
+	width: 700px;
+	padding-left: 50px;
+}
+
+.admin .field {
+	background-color: #333333;
+	border: none;
+	color: #999999;
+	width: 195px;
+	height: 20px;
+}
+
+.admin .button {
+	color: #ffffff;
+	background-color: #737373;
+	font-size: 8px;
+	height: 20px;
+	width: 60px;
+	border: none;
+}
+
+
+.admin .projectForm {
+	text-align: right;
+	color: #ffffff;
+	padding-right: 50px;
+	padding-top: 0px;
+}
+
+.admin input {
+	width: 1%;
+}
+
+.admin .checkbox{
+	width: 12px;
+}
+
+.admin .sectionTitle {
+	font-size: 14px;
+	font-weight: bold;
+	color: #ffffff;
+	padding-top: 65px;
+	padding-bottom: 30px;
+}
+
+.admin .columnTitle {
+	font-size: 12px;
+	font-weight: bold;
+	color: #e6e5a9;
+	height: 40px;
+	border-bottom: 2px;
+}
+
+.admin .greyBackground {
+	background-color: #2b2b2b;
+}
+
+#edit a:hover{
+	background-image: url(../images/edit_sel.gif);
+}
+
+#edit a{
+	background-image: url(../images/edit.gif);
+}
+
+#del a:hover{
+	background-image: url(../images/del_sel.gif);
+}
+
+#del a{
+	background-image: url(../images/del.gif);
+}
+
+div.fileinputs {
+	position: relative;
+}
+
+div.fakefile {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 1;
+}
+
+input.file {
+	position: relative;
+	text-align: right;
+	-moz-opacity:0 ;
+	filter:alpha(opacity: 0);
+	opacity: 0;
+	z-index: 2;
+}

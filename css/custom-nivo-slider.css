@@ -1,0 +1,100 @@
+/*
+ * Note: Include the nivo-slider.css file that comes
+ * with the main download before including this file.
+ */
+.dis .container {
+	height: 536px;
+	width: 960px
+}
+#slider {
+	position:relative;
+	margin: 0;
+	background:#fff url(../images/loading.gif) no-repeat 50% 50%;
+	width: 570px;
+	float: right;
+}
+.souz #slider, .DW #slider, .Gh #slider, .Mel #slider, .Pix #slider {
+	position:relative;
+	background:#fff url(../images/loading.gif) no-repeat 50% 50%;
+	-moz-box-shadow:0px 0px 10px #dfdfdf;
+	-webkit-box-shadow:0px 0px 10px #dfdfdf;
+	box-shadow:0px 0px 10px #dfdfdf;
+	width: 570px;
+	float: right;
+	margin-top: 20px;
+	margin-bottom: 0;
+	margin-right: 0;
+	left: 30px;
+}
+#sliderPassive {
+	position:relative;
+	background:#fff url(../images/loading.gif) no-repeat 50% 50%;
+	-moz-box-shadow:0px 0px 10px #dfdfdf;
+	-webkit-box-shadow:0px 0px 10px #dfdfdf;
+	box-shadow:0px 0px 10px #dfdfdf;
+	width: 570px;
+	float: right;
+	height: 358px;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-right: 0;
+	left: 30px;
+}
+#slider img {
+	position:absolute;
+	top:0px;
+	left:0px;
+	display:none;
+}
+#slider a {
+	border:0;
+}
+
+.nivo-controlNav {
+	position: absolute;
+	bottom: -25px;
+	left: 46%;
+}
+.nivo-controlNav a {
+	display:block;
+	width:10px;
+	height:10px;
+	background:url(../images/bullets.png) no-repeat;
+	text-indent:-9999px;
+	border:0;
+	margin-right:3px;
+	float:left;
+}
+.nivo-controlNav a.active {
+	background-position:-10px 0;
+}
+.nivo-directionNav a {
+	display:block;
+	width: 62px;
+	height: 62px;
+	text-indent:-9999px;
+	border:0;
+	top: 141px;
+	background-image: url(../images/arrowsNew.png);
+}
+a.nivo-nextNav {
+	background-position: -80px 0;
+	left: 511px;
+}
+a.nivo-prevNav {
+	left: -20px;
+}
+a.nivo-nextNav:hover {
+	background-position: -80px 80px;
+}
+a.nivo-prevNav:hover {
+	background-position: 0px 80px;
+}
+.dis .nivo-directionNav a {
+	top: 157px;
+}
+.dis a.nivo-nextNav {
+	left: 526px;
+}
+.dis a.nivo-prevNav {
+	left: -16px;

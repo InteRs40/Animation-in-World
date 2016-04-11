@@ -1,0 +1,147 @@
+/*
+ * jQuery Nivo Slider v2.1
+ * http://nivo.dev7studios.com
+ *
+ * Copyright 2010, Gilbert Pellegrom
+ * Free to use and abuse under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ * 
+ * March 2010
+ */
+ 
+ 
+/* The Nivo Slider styles */
+body {
+	color: #666666;
+	font-family: "Helvetica Neue", Verdana, Arial, Helvetica, sans-serif;
+	background-color: #f9f9f9;
+}
+.container {
+	
+	height: 400px;
+	width: 926px;
+}
+.sliderText {
+	float: left;
+	width: 260px;
+	color: gray;
+	font: 13px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+/*	background-color: #ebebeb;*/
+	padding: 20px;
+	margin-top: 10px;
+}
+.sliderText p {
+	font-size: 13px;
+}
+.projectName {
+	font-size: 17px;
+	font-weight: bold;
+	color: black;
+	margin-bottom: 2px;
+}
+.projectType {
+	font-weight: bold;
+	margin-bottom: 10px;
+	font-style: italic;
+}
+.launch {
+	background-color: #000;
+	padding-left: 5px;
+	padding-bottom: 3px;
+	padding-top: 2px;
+	font-size: 11px;
+	width: 81px;
+	margin-top: 40px;
+	color: #fff;
+	font-style: italic;
+}
+.launch a{
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+}
+.production {
+	padding-left: 5px;
+	padding-bottom: 3px;
+	padding-top: 2px;
+	margin-top: 40px;
+	color: #d7d7d7;
+	font-size: 11px;
+	width: 81px;
+	background-color: #a1a1a1;
+	font-style: italic;
+}
+.nivoSlider {
+	position:relative;
+}
+.nivoSlider img {
+	position:absolute;
+	top:0px;
+	left:0px;
+}
+/* If an image is wrapped in a link */
+.nivoSlider a.nivo-imageLink {
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	border:0;
+	padding:0;
+	margin:0;
+	z-index:60;
+	display:none;
+}
+/* The slices in the Slider */
+.nivo-slice {
+	display:block;
+	position:absolute;
+	z-index:50;
+	height:100%;
+}
+/* Caption styles */
+.nivo-caption {
+	position:absolute;
+	left:0px;
+	bottom:0px;
+	background:#000;
+	color:#fff;
+	opacity:0.8; /* Overridden by captionOpacity setting */
+	width:100%;
+	z-index:89;
+}
+.nivo-caption p {
+	padding:5px;
+	margin:0;
+}
+.nivo-caption a {
+	display:inline !important;
+}
+.nivo-html-caption {
+    display:none;
+}
+/* Direction nav styles (e.g. Next & Prev) */
+.nivo-directionNav a {
+	position:absolute;
+	top:45%;
+	z-index:99;
+	cursor:pointer;
+}
+.nivo-prevNav {
+	left:0px;
+}
+.nivo-nextNav {
+	right:0px;
+}
+/* Control nav styles (e.g. 1,2,3...) */
+.nivo-controlNav a {
+	position:relative;
+	z-index:99;
+	cursor:pointer;
+}
+.nivo-controlNav a.active {
+	font-weight:bold;
+}
+a {
+	color: #666;
+}
